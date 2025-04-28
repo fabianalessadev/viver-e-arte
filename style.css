@@ -1,0 +1,276 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #e42270;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+header p {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+main {
+    padding: 2em;
+    flex: 1;
+    min-height: 80vh;
+}
+
+#busca {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#campo-busca {
+    padding: 0.75em;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#botao-buscar {
+    padding: 0.75em 1.2em;
+    background-color: #c51762;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#botao-buscar:hover {
+    background-color: #e44d8e;
+}
+
+#categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.categoria-quadro {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 0 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria-titulo {
+    background-color: #f9f9f9;
+    padding: 0.75em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.categoria-titulo h2 {
+    margin: 0;
+    color: #2c2a2b;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoria-titulo h2 img.categoria-icone {
+    width: 1.0em; /* Tamanho menor para os ícones */
+    height: auto; /* Mantém a proporção */
+    margin-right: 0.5em; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+.categoria-conteudo {
+    padding: 1em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria-conteudo p,
+.citacao-artista {
+    text-align: justify;
+    hyphens: auto;
+    margin: 0.5em 1em;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.citacao-artista {
+    font-style: italic;
+    color: #777;
+    border-left: 3px solid #ccc;
+    padding-left: 0.8em;
+    margin-top: 1em;
+}
+
+.citacao-artista cite {
+    font-style: normal;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-top: 0.5em;
+    text-align: right;
+}
+
+.artistas-categoria {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid #eee;
+}
+
+.ver-mais {
+    display: block;
+    padding: 0.75em;
+    background-color: #911756;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid #ddd;
+}
+
+.ver-mais:hover {
+    background-color: #bd3077d1;
+}
+
+#participe,
+#sobre {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin-bottom: 2em;
+}
+
+#participe h2,
+#sobre h2 {
+    color:#2c2a2b;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.botao {
+    display: inline-block;
+    padding: 0.75em 1.2em;
+    background-color: #c51762;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 1.5em;
+    font-size: 1.1em;
+}
+
+.botao:hover {
+    background-color: #e44d8e;
+}
+
+footer {
+    background-color: #e42270;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    line-height: 1.2;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sobre-rodape,
+.contato-rodape {
+    text-align: center;
+    flex: 1;
+}
+
+.sobre-rodape h3,
+.contato-rodape h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.sobre-rodape p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.contato-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-rodape h3 {
+    margin-bottom: 0;
+}
+
+.contato-rodape p.email-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.contato-rodape p.email-rodape a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0.3em;
+}
+
+.contato-rodape p.email-rodape i.email-icon {
+    font-size: 1.0em;
+    vertical-align: middle;
+}
+
+.copyright,
+.desenvolvedor,
+.atribuicao {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+.atribuicao a {
+    color: #aaaaaa;
+    text-decoration: none;
+    font-size: 0.10em;
+}
+
+.atribuicao a:hover {
+    text-decoration: underline;
+}
+
+.atribuicao {
+    font-size: 0.10em;
+    margin-top: 0.5em;
+}

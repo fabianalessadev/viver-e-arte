@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catálogo de Artistas - Círculo Criativo</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./font/flaticon.css">
+        <script src="script.js"></script>
+   </head>
+
+   <body>
+        <header>
+            <a href="index.html"><h1>Círculo Criativo</h1></a>
+            <p>Encontre os talentos da nossa região!</p>
+        </header>
+
+        <main>
+            <section id="filtro">
+                <label for="categoria">Filtrar por categoria:</label>
+                <select id="categoria">
+                    <option value="todos">Todos</option>
+                    <option value="literatura">Literatura</option>
+                    <option value="musica">Música</option>
+                    <option value="artes-visuais">Artes Visuais</option>
+                    <option value="artes-cenicas">Artes Cênicas</option>
+                </select>
+            </section>
+
+            <section id="artistas">
+                </section>
+
+            <section id="cadastro">
+                <h2>Cadastre seu trabalho</h2>
+                <form id="formCadastro">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+
+                    <label for="categoriaCadastro">Categoria:</label><br>
+                    <select id="categoriaCadastro" name="categoria" required>
+                        <option value="literatura">Literatura</option>
+                        <option value="musica">Música</option>
+                        <option value="artes-visuais">Artes Visuais</option>
+                        <option value="artes-cenicas">Artes Cênicas</option>
+                    </select><br>
+
+                    <label for="descricao">Descrição:</label><br>
+                    <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br>
+
+                    <label for="contato">Contato(s):</label><br>
+                    <div id="contatos-container">
+                        <div class="contato-item">
+                            <select class="tipo-contato" name="tipoContato[]">
+                                <option value="telefone">Telefone</option>
+                                <option value="email">E-mail</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                            <input type="text" class="valor-contato" name="valorContato[]" placeholder="Insira o contato" required>
+                        </div>
+                    </div>
+                    <button type="button" id="adicionar-contato">Adicionar outro contato</button><br>
+
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="rodape-conteudo">
+                <div class="sobre-rodape">
+                    <h3>Sobre o Círculo Criativo</h3>
+                    <p>Conectando artistas e amantes da arte.</p>
+                </div>
+                <div class="contato-rodape">
+                    <h3>Contato</h3>
+                    <p class="email-rodape"><i class="material-icons email-icon">email</i><a href="mailto:fabianalessadev@gmail.com">fabianalessadev@gmail.com</a></p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Círculo Criativo</p>
+            <p class="desenvolvedor">Este projeto foi desenvolvido por Fabiana Lessa. Para mais informações, entre em contato.</p>
+            <p class="atribuicao"><a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Smashicons - Flaticon</a></p>
+        </footer>
+
+   </body>
+
+   </html>
